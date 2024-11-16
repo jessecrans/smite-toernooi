@@ -9,10 +9,16 @@ export default function Home() {
       <Image
         src="/pip.jpg"
         alt="Pip"
-        width={500}
-        height={500}
+        width={300}
+        height={300}
         className="m-4"
       />
+      <p className="text-xl m-4">
+        <q cite="DrVanox">
+          Als ik in de top 3 kom en ik sta boven stoets, dan tatoeëer ik de smite lijst.
+        </q>
+        <span> ~ DrVanox</span>
+      </p>
       {/* <button className="bg-blue-500 hover:bg-blue-700 font-bold p-4 m-4 rounded text-white">
         Coming soon...
       </button> */}
