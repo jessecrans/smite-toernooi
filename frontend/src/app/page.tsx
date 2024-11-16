@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex flex-col justify-between items-center">
-      <h2 className="text-4xl">De Boys</h2>
-      <h1 className="text-8xl uppercase">Smite Toernooi</h1>
-      <h2 className="text-4xl">2024</h2>
+      <h2 className="text-3xl">De Boys</h2>
+      <h1 className="text-6xl uppercase text-center">Smite Toernooi</h1>
+      <h2 className="text-3xl">2024</h2>
       <Image
         src="/pip.jpg"
         alt="Pip"
@@ -13,7 +13,7 @@ export default function Home() {
         height={300}
         className="m-4"
       />
-      <p className="text-xl m-4">
+      <p className="text-l m-4 text-center">
         <q cite="DrVanox">
           Als ik in de top 3 kom en ik sta boven stoets, dan tatoeëer ik de smite lijst.
         </q>
