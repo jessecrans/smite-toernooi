@@ -11,7 +11,7 @@ export default function Home() {
         alt="Pip"
         width={500}
         height={500}
-        className=""
+        className="m-4"
       />
       {/* <button className="bg-blue-500 hover:bg-blue-700 font-bold p-4 m-4 rounded text-white">
         Coming soon...
