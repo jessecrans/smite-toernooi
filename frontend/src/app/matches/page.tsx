@@ -2,7 +2,9 @@ import React from 'react'
 
 const Matches = () => {
   return (
-    <h1>Matches</h1>
+    <main className='flex justify-start items-center pt-12'>
+      <h1 className='text-smite-text-white'>Matches page under construction.</h1>
+    </main>
   )
 }
 
