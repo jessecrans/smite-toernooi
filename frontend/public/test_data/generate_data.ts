@@ -1,57 +1,77 @@
-interface MatchScore {
-  kills: number;
-  deaths: number;
-  damage: number;
-  healing: number;
-  gold_per_minute: number;
-}
-
-interface Match {
-  winner: string | null;
-  order_player: string;
-  chaos_player: string;
-  duration: number | null;
-  order_score: MatchScore | null;
-  chaos_score: MatchScore | null;
-}
-
-const player_names: string[] = [
-  "DrVanox",
+const players = [
   "YellowVarik",
+  "DrVanox",
+  "jspr03",
   "GSkillz",
   "Abstuz",
-  "jspr03",
-];
+]
 
-function generateRandomMatchScore(): MatchScore {
+interface Player {
+  name: string
+  image: string
+  rank: number
+  wins: number
+  losses: number
+  kills: number
+  deaths: number
+  damage: number
+  healing: number
+  average_damage: number
+  average_healing: number
+  average_gpm: number
+}
+
+interface MatchStats {
+  kills: number
+  deaths: number
+  damage: number
+  healing: number
+  gpm: number
+}
+
+enum Side { ORDER, CHAOS }
+
+interface Match {
+  match_id: number
+  played: boolean
+  duration: number
+  winner: Side
+  order_player: string
+  chaos_player: string
+  order_stats: MatchStats
+  chaos_stats: MatchStats
+}
+
+function get_player(name: string): Player {
   return {
-    kills: Math.floor(Math.random() * 10),
-    deaths: Math.floor(Math.random() * 10),
-    damage: Math.floor(Math.random() * 10000),
-    healing: Math.floor(Math.random() * 10000),
-    gold_per_minute: Math.floor(Math.random() * 1000),
+
   }
 }
 
-function generateRandomMatch(order_player: string, chaos_player: string): Match {
-  let winner = ["order", "chaos", null][Math.floor(Math.random() * 3)];
-  if (!winner) {
-    return {
-      winner: winner,
-      order_player: order_player,
-      chaos_player: chaos_player,
-      duration: null,
-      order_score: null,
-      chaos_score: null,
-    }
-  } else {
-    return {
-      winner: winner,
-      order_player: order_player,
-      chaos_player: chaos_player,
-      duration: Math.floor(Math.random() * 1800),
-      order_score: generateRandomMatchScore(),
-      chaos_score: generateRandomMatchScore(),
-    }
+function get_players(): Player[] {
+  return players
+}
+
+function get_match_history(): Match[] {
+  return [
+
+  ]
+}
+
+function get_all_matches(): Match[] {
+  return [
+
+  ]
+}
+
+function get_match(match_id: number): Match {
+  return {
+
+  }
+}
+
+function get_next_match(): Match {
+  return {
+
   }
 }
