@@ -10,7 +10,7 @@ const PlayerPage = ({
 }) => {
   return (
     <main className='flex justify-start items-center pt-12'>
-      <h1 className='text-smite-text-white'>Player page under construction.</h1>
+      <h1 className='text-smite-text-white'>Player {params.player} page under construction.</h1>
     </main>
   )
 }
