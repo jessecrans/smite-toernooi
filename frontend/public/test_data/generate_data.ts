@@ -42,36 +42,36 @@ interface Match {
   chaos_stats: MatchStats
 }
 
-function get_player(name: string): Player {
-  return {
+// function get_player(name: string): Player {
+//   return {
 
-  }
-}
+//   }
+// }
 
-function get_players(): Player[] {
-  return players
-}
+// function get_players(): Player[] {
+//   return players
+// }
 
-function get_match_history(): Match[] {
-  return [
+// function get_match_history(): Match[] {
+//   return [
 
-  ]
-}
+//   ]
+// }
 
-function get_all_matches(): Match[] {
-  return [
+// function get_all_matches(): Match[] {
+//   return [
 
-  ]
-}
+//   ]
+// }
 
-function get_match(match_id: number): Match {
-  return {
+// function get_match(match_id: number): Match {
+//   return {
 
-  }
-}
+//   }
+// }
 
-function get_next_match(): Match {
-  return {
+// function get_next_match(): Match {
+//   return {
 
-  }
-}
+//   }
+// }
